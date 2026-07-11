@@ -1,0 +1,7 @@
+Content-Type: multipart/mixed; boundary=X
+
+--X
+Content-Type: text/plain
+
+hi
+--X--

@@ -1,0 +1,9 @@
+project: postfix
+target: fuzz_tok822
+cmds:
+  - cmd: /mayhem/fuzz_tok822
+    libfuzzer: true
+    dictionary: /mayhem/mayhem/fuzz_tok822.dict
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_tok822/testsuite

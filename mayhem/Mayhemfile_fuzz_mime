@@ -1,0 +1,9 @@
+project: postfix
+target: fuzz_mime
+cmds:
+  - cmd: /mayhem/fuzz_mime
+    libfuzzer: true
+    dictionary: /mayhem/mayhem/fuzz_mime.dict
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_mime/testsuite
